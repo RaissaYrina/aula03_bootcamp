@@ -41,3 +41,39 @@ else:
 # (antes das 9h ou depois das 18h). Dada uma transação como transacao = {'valor': 12000, 'hora': 20}, verifique se ela é suspeita.
 
 #EXERCICIOS DE FOR
+
+#Contagem de Palavras em Textos
+#Objetivo: Dado um texto, contar quantas vezes cada palavra única aparece nele.
+'''
+texto = 'hoje é nossa terceira aula do bootcamp, o bootcamp de python'
+
+novo_texto = texto.replace(',','') #substituindo , por vazio
+#quebrar o texto
+palavras = novo_texto.split()
+
+print(palavras)
+
+contagem_de_palavras = {} # dicionario vazio 
+
+#eu quero percorrer todas as palavras dentro de palavra e checa se ela ja esta no meu contagem de palavras
+
+for palavra in palavras:
+    if palavra in contagem_de_palavras:
+        contagem_de_palavras[palavra] = +1
+    else: 
+        contagem_de_palavras[palavra] = 1
+
+print(contagem_de_palavras)'
+'''
+
+# 7. Normalização de Dados
+# Objetivo: Normalizar uma lista de números para que fiquem na escala de 0 a 1.
+
+# 8. Filtragem de Dados Faltantes
+# Objetivo: Dada uma lista de dicionários representando dados de usuários, filtrar aqueles que têm um campo específico faltando.
+
+# 9. Extração de Subconjuntos de Dados
+# Objetivo: Dada uma lista de números, extrair apenas aqueles que são pares.
+
+# 10. Agregação de Dados por Categoria
+# Objetivo: Dado um conjunto de registros de vendas, calcular o total de vendas por categoria.
